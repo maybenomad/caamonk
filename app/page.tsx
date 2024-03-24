@@ -23,7 +23,7 @@ export default function Home() {
         />
         <a
           href="#tokenomics"
-          className="hidden md:block absolute left-[10%] rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
+          className="hidden md:block absolute md:left-[8%] lg:left-[10%] rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
         >
           <Image
             src="/link_tokenomics.png"
@@ -46,7 +46,7 @@ export default function Home() {
         </a>
         <a
           href="#whitepeper"
-          className="hidden md:block absolute bottom-[42%] right-[10%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
+          className="hidden md:block absolute bottom-[42%] md:right-[8%] lg:right-[10%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
         >
           <Image
             src="/link_whitepaper.png"
@@ -55,7 +55,7 @@ export default function Home() {
             alt="Tokenomiqs"
           />
         </a>
-        <div className="hidden md:flex absolute z-100 left-[62%] bottom-[21%] w-[60%] rotate-[12deg]">
+        <div className="hidden md:flex absolute z-100 md:left-[65%] lg:left-[62%] bottom-[21%] w-[60%] rotate-[12deg]">
           <a
             href="https://x.com/inj_monks"
             target="_blank"
@@ -127,7 +127,7 @@ export default function Home() {
       >
         <Image
           className={csx(
-            "relative top-0 left-[-10%] rotate-[-6deg] w-[70%] lg:w-[40%] transition"
+            "relative top-0 left-[-10%] rotate-[-6deg] w-[70%] md:w-[40%] transition"
           )}
           src="/presaleinfo.png"
           height={500}
