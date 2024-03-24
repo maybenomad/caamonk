@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-white overflow-hidden">
       <div className="bg-spatter min-h-screen w-full fixed"></div>
-      <div className="h-full w-full flex items-center justify-center relative max-w-[1500px] pt-24">
+      <div className="h-full w-full flex items-center justify-center relative max-w-[1500px] pt-12">
         <Image
           className="relative sm:w-full md:w-[70%] lg:w-[55%]"
           src="/monksmain.png"
@@ -23,7 +23,7 @@ export default function Home() {
         />
         <a
           href="#tokenomics"
-          className="absolute left-[10%] rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
+          className="hidden md:block absolute left-[10%] rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
         >
           <Image
             src="/link_tokenomics.png"
@@ -34,7 +34,7 @@ export default function Home() {
         </a>
         <a
           href="#presale"
-          className="absolute left-[8%] bottom-[22%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[35%]"
+          className="hidden md:block absolute left-[8%] bottom-[22%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[35%]"
         >
           <Image
             className="w-full"
@@ -46,7 +46,7 @@ export default function Home() {
         </a>
         <a
           href="#whitepeper"
-          className="absolute bottom-[42%] right-[10%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
+          className="hidden md:block absolute bottom-[42%] right-[10%] rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
         >
           <Image
             src="/link_whitepaper.png"
@@ -55,9 +55,10 @@ export default function Home() {
             alt="Tokenomiqs"
           />
         </a>
-        <div className="absolute flex z-100 left-[62%] bottom-[23%] w-[60%] rotate-[12deg]">
+        <div className="hidden md:flex absolute z-100 left-[62%] bottom-[21%] w-[60%] rotate-[12deg]">
           <a
             href="https://x.com/inj_monks"
+            target="_blank"
             className="rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
           >
             <Image
@@ -68,7 +69,11 @@ export default function Home() {
               alt="Tokenomiqs"
             />
           </a>
-          <a className="rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]">
+          <a
+            href="https://t.me/monks_inj"
+            target="_blank"
+            className="rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
+          >
             <Image
               className="w-full"
               src="/link_telegram.png"
@@ -79,7 +84,35 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="h-full w-full flex items-center justify-center relative">
+      <div className="block md:hidden flex z-100 justify-center pb-8">
+        <a
+          href="https://x.com/inj_monks"
+          target="_blank"
+          className="rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
+        >
+          <Image
+            className="w-full"
+            src="/link_x.png"
+            height={200}
+            width={300}
+            alt="Tokenomiqs"
+          />
+        </a>
+        <a
+          href="https://t.me/monks_inj"
+          target="_blank"
+          className="rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
+        >
+          <Image
+            className="w-full"
+            src="/link_telegram.png"
+            height={200}
+            width={300}
+            alt="Tokenomiqs"
+          />
+        </a>
+      </div>
+      <div className="h-full w-full flex items-center justify-center relative mt-12 md:mt-0">
         <Image
           className="relative top-[-50px]"
           src="/rule.png"
@@ -94,7 +127,7 @@ export default function Home() {
       >
         <Image
           className={csx(
-            "relative top-0 left-[-10%] rotate-[-6deg] cursor-pointer w-[40%] transition hover:scale-105"
+            "relative top-0 left-[-10%] rotate-[-6deg] w-[70%] lg:w-[40%] transition"
           )}
           src="/presaleinfo.png"
           height={500}
@@ -103,7 +136,8 @@ export default function Home() {
         />
         <Image
           className={csx(
-            "absolute top-0 left-[50%] cursor-pointer w-[40%] transition hover:scale-105"
+            "absolute top-0 w-[40%] transition",
+            "left-[60%] top-[20%] md:left-[50%]"
           )}
           src="/gimmesuck.png"
           height={500}
@@ -116,7 +150,7 @@ export default function Home() {
         className="h-full w-full flex items-center justify-center relative max-w-[1500px]"
       >
         <Image
-          className="cursor-pointer w-[50%]"
+          className="w-[90%] md:w-[50%]"
           src="/tokenomics.png"
           height={500}
           width={500}
@@ -125,12 +159,12 @@ export default function Home() {
       </div>
       <div
         id="whitepeper"
-        className="relative h-full w-full flex flex-col items-center justify-center mt-16 max-w-[1500px]"
+        className="relative h-full w-full flex flex-col items-center justify-center max-w-[1500px]"
       >
         <Image
           className={csx(
-            "absolute cursor-pointer w-[50%] transition hover:scale-105 rotate-12",
-            isViewingPepper ? "top-[-25%]" : "top-0"
+            "absolute cursor-pointer top-[50%] md:top-[20%] w-[75%] md:w-[50%] transition hover:scale-105 rotate-[-24deg]",
+            isViewingPepper ? "left-[-10%] md:left-[11%]" : "left-[33%]"
           )}
           style={{ transitionProperty: "all" }}
           src="/papermonk.png"
@@ -139,7 +173,7 @@ export default function Home() {
           alt="Tokenomiqs"
         />
         <Image
-          className="relative cursor-pointer w-[50%]"
+          className="relative cursor-pointer w-[90%] md:w-[50%]"
           src="/whitepaper.png"
           height={500}
           width={500}
@@ -147,8 +181,10 @@ export default function Home() {
         />
         <Image
           className={csx(
-            "absolute top-0 cursor-pointer w-[50%] transition hover:scale-105",
-            isViewingPepper ? "left-[50%] rotate-12" : "left-[28%]"
+            "absolute top-0 cursor-pointer transition hover:scale-105 w-[90%] md:w-[50%]",
+            isViewingPepper
+              ? "left-[50%] rotate-12"
+              : "left-[12%] md:left-[28%]"
           )}
           style={{ transitionProperty: "all" }}
           onClick={() => setIsViewingPepper(!isViewingPepper)}
@@ -167,18 +203,18 @@ export default function Home() {
           alt="$MONKS"
         />
       </div>
-      {/* <div
+      <div
         id="tokenomics"
-        className="h-full w-full flex items-center justify-center relative max-w-[1600px]"
+        className="h-full w-full flex items-center justify-center relative max-w-[1600px] mb-20"
       >
         <Image
-          className="cursor-pointer w-[50%]"
+          className="cursor-pointer w-[100%] md:w-[50%]"
           src="/footer.png"
           height={500}
           width={500}
           alt="Tokenomiqs"
         />
-      </div> */}
+      </div>
 
       {/* <Image
           className="absolute left-[100px] top-[350px] rotate-[12deg] hover:scale-110 cursor-pointer"
