@@ -134,7 +134,7 @@ export default function Home() {
         <Image
           className={csx(
             "absolute top-0 w-[40%] transition",
-            "left-[60%] top-[20%] md:left-[50%]"
+            "left-[60%] top-[20%] md:top-[0%] md:left-[50%]"
           )}
           src="/gimmesuck.png"
           height={500}
