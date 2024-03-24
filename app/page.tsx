@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-white overflow-hidden">
       <div className="bg-spatter min-h-screen w-full fixed"></div>
-      <div className="h-full w-full flex items-center justify-center relative max-w-[1600px] pt-24">
+      <div className="h-full w-full flex items-center justify-center relative max-w-[1500px] pt-24">
         <Image
           className="relative sm:w-full md:w-[70%] lg:w-[55%]"
           src="/monksmain.png"
@@ -90,7 +90,7 @@ export default function Home() {
       </div>
       <div
         id="presale"
-        className="h-full w-full flex items-center justify-center relative max-w-[1600px]"
+        className="h-full w-full flex items-center justify-center relative max-w-[1500px]"
       >
         <Image
           className={csx(
@@ -113,7 +113,7 @@ export default function Home() {
       </div>
       <div
         id="tokenomics"
-        className="h-full w-full flex items-center justify-center relative max-w-[1600px]"
+        className="h-full w-full flex items-center justify-center relative max-w-[1500px]"
       >
         <Image
           className="cursor-pointer w-[50%]"
@@ -125,7 +125,7 @@ export default function Home() {
       </div>
       <div
         id="whitepeper"
-        className="relative h-full w-full flex flex-col items-center justify-center mt-16"
+        className="relative h-full w-full flex flex-col items-center justify-center mt-16 max-w-[1500px]"
       >
         <Image
           className={csx(
@@ -158,7 +158,7 @@ export default function Home() {
           alt="Tokenomiqs"
         />
       </div>
-      <div className="h-full w-full flex items-center justify-center relative mt-20">
+      <div className="h-full w-full flex items-center justify-center relative mt-20 max-w-[1500px]">
         <Image
           className="relative top-[-50px]"
           src="/rule2.png"
