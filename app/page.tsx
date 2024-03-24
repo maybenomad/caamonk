@@ -56,20 +56,27 @@ export default function Home() {
           />
         </a>
         <div className="absolute flex z-100 left-[62%] bottom-[23%] w-[60%] rotate-[12deg]">
-          <Image
+          <a
+            href="https://x.com/inj_monks"
             className="rotate-[-12deg] hover:scale-110 cursor-pointer w-[25%]"
-            src="/link_x.png"
-            height={200}
-            width={300}
-            alt="Tokenomiqs"
-          />
-          <Image
-            className="rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]"
-            src="/link_telegram.png"
-            height={200}
-            width={300}
-            alt="Tokenomiqs"
-          />
+          >
+            <Image
+              className="w-full"
+              src="/link_x.png"
+              height={200}
+              width={300}
+              alt="Tokenomiqs"
+            />
+          </a>
+          <a className="rotate-[12deg] hover:scale-110 cursor-pointer w-[25%]">
+            <Image
+              className="w-full"
+              src="/link_telegram.png"
+              height={200}
+              width={300}
+              alt="Tokenomiqs"
+            />
+          </a>
         </div>
       </div>
       <div className="h-full w-full flex items-center justify-center relative">
@@ -106,7 +113,7 @@ export default function Home() {
       </div>
       <div
         id="tokenomics"
-        className="h-full w-full flex items-center justify-center relative max-w-[1600px] mt-20"
+        className="h-full w-full flex items-center justify-center relative max-w-[1600px]"
       >
         <Image
           className="cursor-pointer w-[50%]"
@@ -151,6 +158,27 @@ export default function Home() {
           alt="Tokenomiqs"
         />
       </div>
+      <div className="h-full w-full flex items-center justify-center relative mt-20">
+        <Image
+          className="relative top-[-50px]"
+          src="/rule2.png"
+          height={500}
+          width={1000}
+          alt="$MONKS"
+        />
+      </div>
+      {/* <div
+        id="tokenomics"
+        className="h-full w-full flex items-center justify-center relative max-w-[1600px]"
+      >
+        <Image
+          className="cursor-pointer w-[50%]"
+          src="/footer.png"
+          height={500}
+          width={500}
+          alt="Tokenomiqs"
+        />
+      </div> */}
 
       {/* <Image
           className="absolute left-[100px] top-[350px] rotate-[12deg] hover:scale-110 cursor-pointer"
